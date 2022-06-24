@@ -102,13 +102,15 @@ public class Test
     public void Test1()
     {
         _db.Insert("Test1");
-        _testOutputHelper.WriteLine(_db.Get());
+        var data = _db.Get();
+        _testOutputHelper.WriteLine(data);
     }
     
     [Fact]
     public void Test2()
     {
         _db.Insert("Test2");
-        _testOutputHelper.WriteLine(_db.Get());
+        var data = _db.Get();
+        _testOutputHelper.WriteLine(data);
     }
 }
